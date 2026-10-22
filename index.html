@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prekių krepšelis</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Prekių krepšelis</h1>
+
+    <h2>Prekės duomenys</h2>
+
+    <form id="prekesForma">
+        <label for="prekesId">Prekės kodas (ID):</label>
+        <input type="text" id="prekesId" required>
+
+        <br><br>
+
+        <label for="prekesPavadinimas">Pavadinimas:</label>
+        <input type="text" id="prekesPavadinimas" required>
+
+        <br><br>
+
+        <label for="prekesKiekis">Kiekis:</label>
+        <input type="number" id="prekesKiekis" min="1" step="1" required>
+
+        <br><br>
+
+        <button type="submit">Pridėti prekę</button>
+        <button type="button" id="atnaujintiMygtukas">Atnaujinti</button>
+        <button type="button" id="isvalytiMygtukas">Išvalyti formą</button>
+    </form>
+
+    <p id="formosPranesimas"></p>
+
+    <h2>Visos prekės</h2>
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Pavadinimas</th>
+                <th>Kiekis</th>
+                <th>Veiksmai</th>
+            </tr>
+        </thead>
+
+        <tbody id="prekiuLentele">
+        </tbody>
+    </table>
+
+    <h2>Prekės paieška pagal ID</h2>
+
+    <label for="paieskosId">Įvesk prekės ID:</label>
+    <input type="text" id="paieskosId">
+
+    <button type="button" id="ieskotiMygtukas">Ieškoti</button>
+
+    <p id="paieskosPranesimas"></p>
+
+    <h2>Prekių krepšelis</h2>
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Pavadinimas</th>
+                <th>Kiekis</th>
+                <th>Veiksmai</th>
+            </tr>
+        </thead>
+
+        <tbody id="krepselioLentele">
+        </tbody>
+    </table>
+
+    <script src="index.js"></script>
+</body>
+</html>
+
